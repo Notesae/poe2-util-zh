@@ -1,0 +1,1 @@
+const en=require('../sources/missing-stats.json');const zh=require('../sources/trade-stats-tw.json').result.flatMap(x=>x.entries);console.log(en.map(x=>[x.id,x.text,zh.find(v=>v.id===x.id)?.text]).slice(0,22));

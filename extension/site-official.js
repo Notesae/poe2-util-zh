@@ -1,0 +1,3 @@
+POE2_SITE_UI.official={
+ 'Trade':'交易','Forum':'論壇','Forums':'論壇','Shop':'商城','Events':'活動','Ladders':'排行榜','Patch Notes':'更新公告','Announcements':'公告','Development Manifesto':'開發宣言','Game':'遊戲','Game Guide':'遊戲指南','Passive Skill Tree':'天賦技能樹','Ascendancy Classes':'昇華職業','Item Filters':'物品篩選器','My Account':'我的帳號','Manage Account':'管理帳號','Create Account':'建立帳號','Create an Account':'建立帳號','Sign Up':'註冊','Log In':'登入','Log Out':'登出','Buy Packs':'購買贊助包','Buy Points':'購買點數','Supporter Packs':'贊助包','Microtransactions':'商城物品','Vault Pass':'寶庫通行證','Private Leagues':'私人聯盟','Download Now':'立即下載','Play Free Now':'立即免費遊玩','Early Access':'搶先體驗','View More':'查看更多','Read More':'閱讀更多','Contact Support':'聯絡客服','Privacy Policy':'隱私政策','Terms of Use':'使用條款'
+};

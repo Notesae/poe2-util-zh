@@ -1,0 +1,1 @@
+const fs=require('fs');let p='extension/engine.js',s=fs.readFileSync(p,'utf8');s=s.replace(/const signature = .*;/,"const signature = s => norm(s).replace(/[+\\-]?\\{\\d+\\}%?|[+\\-]?(?:\\d+(?:\\.\\d+)?|#)(?:[—–]\\d+(?:\\.\\d+)?)?%?/g,'@');");s=s.replace('new Set(matches.map(x=>x.zh)).size===1',"new Set(matches.map(x=>x.zh.replace(/\\s/g,''))).size===1");fs.writeFileSync(p,s);

@@ -1,0 +1,13 @@
+{
+  "name": "poe2-trade-zh",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/engine.test.cjs && node tests/data-coverage.test.cjs && node tests/browser.test.cjs && node tests/extension.test.cjs && node tests/sites.test.cjs",
+    "coverage": "node tools/coverage.cjs && node tools/item-coverage.cjs",
+    "build:data": "python tools/build-data.py"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

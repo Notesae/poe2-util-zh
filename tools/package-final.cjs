@@ -1,0 +1,1 @@
+const fs=require('fs');let p=JSON.parse(fs.readFileSync('package.json','utf8').replace(/^\uFEFF/,''));p.scripts.test='node tests/engine.test.cjs && node tests/data-coverage.test.cjs && node tests/browser.test.cjs && node tests/extension.test.cjs && node tests/sites.test.cjs';fs.writeFileSync('package.json',JSON.stringify(p,null,2));

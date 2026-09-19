@@ -1,0 +1,722 @@
+[
+  {
+    "file": "upstream.7z",
+    "url": "https://poe2db.tw/dls/poe2-trade-tw-0604v3.7z",
+    "sha256": "ec3889791a6ae4f4149b929113b2ff82314bad10cc3c062fb8155b97597ae010"
+  },
+  {
+    "file": "sources/Flask_tag.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Flask_tag.csv",
+    "sha256": "ea6d35ef3af6b4c3ecbb369c96fb6fc578045ed09ea22926e3e47e433031f63b"
+  },
+  {
+    "file": "sources/Gems_data.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Gems_data.txt.csv",
+    "sha256": "adc41d405c46d862a02b2074a66c780a0e2362752f406bdd573bdfba8db5bb28"
+  },
+  {
+    "file": "sources/Gems_tag.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Gems_tag.csv",
+    "sha256": "5bc7519e8a19acf259c46e0301d3bc555c216592e6ffb031ef8d6b5757e06d7c"
+  },
+  {
+    "file": "sources/Items_Accessories.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Items_Accessories.txt.csv",
+    "sha256": "936e14d82bea46b19a1662487c26332699213a37f7aaab80229c1dcdcbe673c5"
+  },
+  {
+    "file": "sources/Items_Armour.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Items_Armour.txt.csv",
+    "sha256": "97a7e22cbb15115bf6aa9d226109087b39555a8e94d5df460b9fc48649077e57"
+  },
+  {
+    "file": "sources/Items_Gems.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Items_Gems.txt.csv",
+    "sha256": "4f8425231f3a589d2bde369a7417a6ce93f861a1201ff885cfa5ef038eec0792"
+  },
+  {
+    "file": "sources/Items_Jewels.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Items_Jewels.txt.csv",
+    "sha256": "a4d056270654ca1bd383e8d2e8f1e5e6d930f7794e31d38e0d64487e6d8a20c6"
+  },
+  {
+    "file": "sources/Items_Weapons.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Items_Weapons.txt.csv",
+    "sha256": "fcb5e6725ec03554eda709f34416902390cfd60ab9b208581152405a8121728e"
+  },
+  {
+    "file": "sources/statDescriptions.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/statDescriptions.csv",
+    "sha256": "92ec2396d6e3e4e3f644fe73dba5d283979bc4428c88ce6f52d2d6788908e591"
+  },
+  {
+    "file": "sources/tree_dn.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/tree_dn.csv",
+    "sha256": "443e372b4d1f93bfb2995b1aed7fd9e947d96635d21961d4a2a566356d4291eb"
+  },
+  {
+    "file": "sources/Uniques.txt.csv",
+    "url": "https://raw.githubusercontent.com/Chuanhsing/PoeCharm2/86198db8ad707e000d19a4ba19a93720566747f0/Data/Translate/zh-rTW/Uniques.txt.csv",
+    "sha256": "9a1caa5e8152e1397314dff32b5238cc468e315f8d038e3afa108d27272d0e0d"
+  },
+  {
+    "file": "sources/db-tw-Albino_Rhoa_Feather.html",
+    "url": "https://poe2db.tw/tw/Albino_Rhoa_Feather",
+    "sha256": "03df1f9c4bf05411adba96d7cec1ed27e5c9ab575a7f80f02a70edd0b7b3acd3"
+  },
+  {
+    "file": "sources/db-tw-Amulets.html",
+    "url": "https://poe2db.tw/tw/Amulets",
+    "sha256": "e3feead4a5d2642983a487b94e047d88ef32cac70e1193d8ad505adbad437350"
+  },
+  {
+    "file": "sources/db-tw-Ancient_Concentrated_Liquid_Isolation.html",
+    "url": "https://poe2db.tw/tw/Ancient_Concentrated_Liquid_Isolation",
+    "sha256": "63fe74c4d1f73d6ee7cc0b341e6745996247c381d16f4678e1eef64dbeb6a71e"
+  },
+  {
+    "file": "sources/db-tw-Ancient_Potent_Liquid_Ferocity.html",
+    "url": "https://poe2db.tw/tw/Ancient_Potent_Liquid_Ferocity",
+    "sha256": "e497cec56f1a76e79bbc1c794c9a0ea7e92ce4480d744ac5b5c3842942c6c0fa"
+  },
+  {
+    "file": "sources/db-tw-Animus_Splinters.html",
+    "url": "https://poe2db.tw/tw/Animus_Splinters",
+    "sha256": "0cbb970f1d129f180c86f6dacd060a1ddd10518ccad3c3fe7d4257aa22622a78"
+  },
+  {
+    "file": "sources/db-tw-Armour.html",
+    "url": "https://poe2db.tw/tw/Armour",
+    "sha256": "242b5bdf8f2fffe079844dd2768a6911c425f4082a0d601433fb895b00371a07"
+  },
+  {
+    "file": "sources/db-tw-Belts.html",
+    "url": "https://poe2db.tw/tw/Belts",
+    "sha256": "203a142a4f56106111d23130d877edf6b8977a77b4ce37e56b3e34905b6189e3"
+  },
+  {
+    "file": "sources/db-tw-Black_Scythe_Artifact.html",
+    "url": "https://poe2db.tw/tw/Black_Scythe_Artifact",
+    "sha256": "fa103b4806a0da268c766f4cab22e95a58b3ceb5fe021fcbff6d20e6c4fc5696"
+  },
+  {
+    "file": "sources/db-tw-Body_Armours.html",
+    "url": "https://poe2db.tw/tw/Body_Armours",
+    "sha256": "7476496d1e12cabee009621726b50e9f7203330247c4dbb81e030b69d3b441b6"
+  },
+  {
+    "file": "sources/db-tw-Bonded_Modifiers.html",
+    "url": "https://poe2db.tw/tw/Bonded_Modifiers",
+    "sha256": "2911bb906fce0ca5796eb9dff8a71cbd5ea86421f1067b7d0274721851cd9991"
+  },
+  {
+    "file": "sources/db-tw-Boots.html",
+    "url": "https://poe2db.tw/tw/Boots",
+    "sha256": "06cce8b622cbefe5364277a4e005a5da88a696b5c0919684685210989c9a499d"
+  },
+  {
+    "file": "sources/db-tw-Bows.html",
+    "url": "https://poe2db.tw/tw/Bows",
+    "sha256": "781f5220b179492e9526830e074806a4af1587ca1c506d12583830e7c1988c97"
+  },
+  {
+    "file": "sources/db-tw-Broken_Circle_Artifact.html",
+    "url": "https://poe2db.tw/tw/Broken_Circle_Artifact",
+    "sha256": "d43aecff3f9db29dc8ba6ad19be024557124331801e593c588b719d0e8b87af2"
+  },
+  {
+    "file": "sources/db-tw-Bucklers.html",
+    "url": "https://poe2db.tw/tw/Bucklers",
+    "sha256": "3942496583f8bc16bf4f36c8495a0a58f764e55c6a4fec57007af869d429cd82"
+  },
+  {
+    "file": "sources/db-tw-Charms.html",
+    "url": "https://poe2db.tw/tw/Charms",
+    "sha256": "d771817ca86ed5f59d481e60f9b9da316c7e45ddb712e479f897e84d387c95d0"
+  },
+  {
+    "file": "sources/db-tw-Crossbows.html",
+    "url": "https://poe2db.tw/tw/Crossbows",
+    "sha256": "ccfd2deb65c45a60d482d6735bf8810c827bcc76af09142a7a9b4a171a78bac7"
+  },
+  {
+    "file": "sources/db-tw-Currency.html",
+    "url": "https://poe2db.tw/tw/Currency",
+    "sha256": "c2c3e2ff98246c0110d7b276569432e57d27cacb524b1881a06c28d0fc467277"
+  },
+  {
+    "file": "sources/db-tw-Dance_with_Death.html",
+    "url": "https://poe2db.tw/tw/Dance_with_Death",
+    "sha256": "46c65f438928da2729a2e7317d907371c78ca52401c859fb62368499fa6c12e6"
+  },
+  {
+    "file": "sources/db-tw-Djinn_Barya.html",
+    "url": "https://poe2db.tw/tw/Djinn_Barya",
+    "sha256": "ecbf4c8dc476af3fae54c02632fb683f64e21d04069930ac75aa145da65f40d4"
+  },
+  {
+    "file": "sources/db-tw-Durability.html",
+    "url": "https://poe2db.tw/tw/Durability",
+    "sha256": "35854b5c164c17b92bb764eaa2e00db482e9025bcb8f065cccbe0e4795254323"
+  },
+  {
+    "file": "sources/db-tw-Exotic_Coinage.html",
+    "url": "https://poe2db.tw/tw/Exotic_Coinage",
+    "sha256": "9e2753098cb94a3822fcab6972e341a5f70803fd9f892c6e3c2ce6e227c9dd7d"
+  },
+  {
+    "file": "sources/db-tw-Flasks.html",
+    "url": "https://poe2db.tw/tw/Flasks",
+    "sha256": "2183bf44afc0f792e8db3fd1e4354eff576c997db7bbdf350e7411cc7e3d0aff"
+  },
+  {
+    "file": "sources/db-tw-Foci.html",
+    "url": "https://poe2db.tw/tw/Foci",
+    "sha256": "65d3c505a7689d60b4560ab86200928c7a0c9f7b23153d8283d7f97958e4ba41"
+  },
+  {
+    "file": "sources/db-tw-Gloves.html",
+    "url": "https://poe2db.tw/tw/Gloves",
+    "sha256": "5ffbb10ee6926519b9da75bc4b0c5a3e3bfa1958f3338366093484ced886ec1b"
+  },
+  {
+    "file": "sources/db-tw-Helmets.html",
+    "url": "https://poe2db.tw/tw/Helmets",
+    "sha256": "0fa393cd270ecda2b6b6b2e517b6e3897bb7863f4b70f0f3d1b09d07a0674bac"
+  },
+  {
+    "file": "sources/db-tw-Idol.html",
+    "url": "https://poe2db.tw/tw/Idol",
+    "sha256": "17b190ca06f3fa3909e0525c2ba57e27ce49b6ee7d61a24897566015b27b42b8"
+  },
+  {
+    "file": "sources/db-tw-Items.html",
+    "url": "https://poe2db.tw/tw/Items",
+    "sha256": "1de5035212c6549da6faccdc2c6e23671accee09425c894c945d8fc9f1b6bdfc"
+  },
+  {
+    "file": "sources/db-tw-Jewels.html",
+    "url": "https://poe2db.tw/tw/Jewels",
+    "sha256": "1b679f88b7819ffc30cd438461ecbcf5b1317dc92016164f2d479905882cc1f2"
+  },
+  {
+    "file": "sources/db-tw-One_Hand_Maces.html",
+    "url": "https://poe2db.tw/tw/One_Hand_Maces",
+    "sha256": "ef9506393396252006a764ab70ef75b05ae4cb1a242125d5c7908ede5e571392"
+  },
+  {
+    "file": "sources/db-tw-Order_Artifact.html",
+    "url": "https://poe2db.tw/tw/Order_Artifact",
+    "sha256": "c4cb22c1a4e2ebebd3c7dfc8e6b8b7b8f754c1997c7e9ec9de57d7d9a445fdd4"
+  },
+  {
+    "file": "sources/db-tw-Quarterstaves.html",
+    "url": "https://poe2db.tw/tw/Quarterstaves",
+    "sha256": "15816e40cf8e20649a25922117089ab74356f42dd5f4d82eb02ecab9b6e65695"
+  },
+  {
+    "file": "sources/db-tw-Quivers.html",
+    "url": "https://poe2db.tw/tw/Quivers",
+    "sha256": "aa0a049b0473990f5ccd3b60835e5139770ef5abd3268072abd5f5fae1006ff0"
+  },
+  {
+    "file": "sources/db-tw-Rings.html",
+    "url": "https://poe2db.tw/tw/Rings",
+    "sha256": "7970a04c5b5df950882382d3d335a1005d172fd83533e508dbc0fa641bdcdd9f"
+  },
+  {
+    "file": "sources/db-tw-Rogues_Marker.html",
+    "url": "https://poe2db.tw/tw/Rogues_Marker",
+    "sha256": "670718ac0d44a2700f6268655f040c427a823a47bbf5fd9e1d21cc025454ca45"
+  },
+  {
+    "file": "sources/db-tw-Rondel_de_Ezo.html",
+    "url": "https://poe2db.tw/tw/Rondel_de_Ezo",
+    "sha256": "30c442d471c74d5365edd7a6e4c537e0ecab68b6a21a5b6de84bc76b3ea31bb5"
+  },
+  {
+    "file": "sources/db-tw-Runes.html",
+    "url": "https://poe2db.tw/tw/Runes",
+    "sha256": "b1550585ecd29c8b5a82f265582df8c27a1891f76b206c3b6f7f8fbc527530bd"
+  },
+  {
+    "file": "sources/db-tw-Ruthless.html",
+    "url": "https://poe2db.tw/tw/Ruthless",
+    "sha256": "c4200971e8b191e19e5a4e1f8e1b11573292ae0d95d389976df585cf56e08d81"
+  },
+  {
+    "file": "sources/db-tw-Sceptres.html",
+    "url": "https://poe2db.tw/tw/Sceptres",
+    "sha256": "d52d4adb49f7aba74f2ab129f51bb3768e98fdad50f2240a9230b229fc3a9daf"
+  },
+  {
+    "file": "sources/db-tw-Shattered_Triskelion.html",
+    "url": "https://poe2db.tw/tw/Shattered_Triskelion",
+    "sha256": "11908bb929598645441c518dd1579d8f8120e1bd1ceab411791fab3a8aa0a7f8"
+  },
+  {
+    "file": "sources/db-tw-Shields.html",
+    "url": "https://poe2db.tw/tw/Shields",
+    "sha256": "84dfdcdae67c811cd6ae7ef74d31035fe3ec6a1c425644a41f4d014e9cd9287e"
+  },
+  {
+    "file": "sources/db-tw-Skill_Gems.html",
+    "url": "https://poe2db.tw/tw/Skill_Gems",
+    "sha256": "293912f9bb6e437344a4b3757f71fd7180726230bc38c51b4cf92f21506dc28d"
+  },
+  {
+    "file": "sources/db-tw-Soul_Core.html",
+    "url": "https://poe2db.tw/tw/Soul_Core",
+    "sha256": "382f04c0cdb7499eeadf076925ff7bdb93f2214fc554962cb8c7271993b14bef"
+  },
+  {
+    "file": "sources/db-tw-Spears.html",
+    "url": "https://poe2db.tw/tw/Spears",
+    "sha256": "7449599b1a9ac260a0be96ec655711dc6997f202c6810bb96444de59a5e17b39"
+  },
+  {
+    "file": "sources/db-tw-Staves.html",
+    "url": "https://poe2db.tw/tw/Staves",
+    "sha256": "5e5ba1a20507355de53b10e88ca13dc3369db026c7c3690ba6ad569c1308246e"
+  },
+  {
+    "file": "sources/db-tw-Sun_Artifact.html",
+    "url": "https://poe2db.tw/tw/Sun_Artifact",
+    "sha256": "297521520fcd8765c3a84c7b63057f4bb9cdb10d0c387e3bdf394d4187e5013d"
+  },
+  {
+    "file": "sources/db-tw-Support_Gems.html",
+    "url": "https://poe2db.tw/tw/Support_Gems",
+    "sha256": "54d1ec81d28b274e45fb8ab943ff7db063b80544cab0d45ce2f7053296d31a9f"
+  },
+  {
+    "file": "sources/db-tw-Tablets.html",
+    "url": "https://poe2db.tw/tw/Tablets",
+    "sha256": "7cf098535ff0c143b7df7d39c41701ce393f860906a19d2d5cfc5f54f4b4c9ac"
+  },
+  {
+    "file": "sources/db-tw-Talismans.html",
+    "url": "https://poe2db.tw/tw/Talismans",
+    "sha256": "3889a20709c3717696a83cfcaa8b78be1f8e57c6e94b40e81f602b0e4708daa0"
+  },
+  {
+    "file": "sources/db-tw-Test_of_Cunning_Barya.html",
+    "url": "https://poe2db.tw/tw/Test_of_Cunning_Barya",
+    "sha256": "361bb8f8ecdae3b181b249c79966d1a4eec0fb2859d4e99c7c50d94b9db8493b"
+  },
+  {
+    "file": "sources/db-tw-Test_of_Strength_Barya.html",
+    "url": "https://poe2db.tw/tw/Test_of_Strength_Barya",
+    "sha256": "f12d13b0185c17b939b838aaba5cb31c34705e895531b5fe32bf76839aff83b6"
+  },
+  {
+    "file": "sources/db-tw-Test_of_Time_Barya.html",
+    "url": "https://poe2db.tw/tw/Test_of_Time_Barya",
+    "sha256": "44568ffbe0b1cab06e131d94fb1d4b7a5feeba9c2c17b1af45d70e9882125c67"
+  },
+  {
+    "file": "sources/db-tw-Test_of_Will_Barya.html",
+    "url": "https://poe2db.tw/tw/Test_of_Will_Barya",
+    "sha256": "3b2d9d420cb1db1edd86cf8f6d82ebfaebf8043d1507c196bcc97fc2567e0826"
+  },
+  {
+    "file": "sources/db-tw-The_Burden_of_Shadows.html",
+    "url": "https://poe2db.tw/tw/The_Burden_of_Shadows",
+    "sha256": "9ccf1590fa1e256a0f31796bdf71fb0af431be2183fcb5337ff42b6e6426eb23"
+  },
+  {
+    "file": "sources/db-tw-The_Masters_Reach.html",
+    "url": "https://poe2db.tw/tw/The_Masters_Reach",
+    "sha256": "efeb7baa4ae6313bda41c2df94fe36a1d69291ce2b15ca33fb7411a9456af7ca"
+  },
+  {
+    "file": "sources/db-tw-Two_Hand_Maces.html",
+    "url": "https://poe2db.tw/tw/Two_Hand_Maces",
+    "sha256": "052c352c1b9c2df8fa6c01268d80fe592942243847e5e6b1519620e0ddc9f6be"
+  },
+  {
+    "file": "sources/db-tw-Uncut_Skill_Gem.html",
+    "url": "https://poe2db.tw/tw/Uncut_Skill_Gem",
+    "sha256": "a4184c78f2b0df04f75c543cbc2e8e23f2dfd5bdf40f5bba476e687914e47ad3"
+  },
+  {
+    "file": "sources/db-tw-Uncut_Spirit_Gem.html",
+    "url": "https://poe2db.tw/tw/Uncut_Spirit_Gem",
+    "sha256": "cb05f2537abb4fb74d8d5f2292a4939fba817d99314702d7d6028b47219af8ed"
+  },
+  {
+    "file": "sources/db-tw-Uncut_Support_Gem.html",
+    "url": "https://poe2db.tw/tw/Uncut_Support_Gem",
+    "sha256": "5c5fb0dd968c919c7a6e69ca2b7c8347c7652ecb8098febc3e0babf9406e6386"
+  },
+  {
+    "file": "sources/db-tw-Unique_item.html",
+    "url": "https://poe2db.tw/tw/Unique_item",
+    "sha256": "ba06e85085d8e34d3825af8c15598c77ade49a781694cf2827814bf41f0e5b13"
+  },
+  {
+    "file": "sources/db-tw-Wands.html",
+    "url": "https://poe2db.tw/tw/Wands",
+    "sha256": "5938991bcb397be99f26a57ec5aa9500e419fa32d49bd4941eb1e46f99fda4bb"
+  },
+  {
+    "file": "sources/db-tw-Waystones.html",
+    "url": "https://poe2db.tw/tw/Waystones",
+    "sha256": "8d1fb0f5818fabe29200a1c4e74e484ca93c46851161b56ecaecbe559f6df1cf"
+  },
+  {
+    "file": "sources/db-tw-Weapons.html",
+    "url": "https://poe2db.tw/tw/Weapons",
+    "sha256": "67687255ef2e3de5032b888e2d4abd03da4405e6b9c9903d8dd268ddf48a3536"
+  },
+  {
+    "file": "sources/db-us-Albino_Rhoa_Feather.html",
+    "url": "https://poe2db.tw/us/Albino_Rhoa_Feather",
+    "sha256": "8986f450a483fc50e50310d0eccb20aa554ff18e146090d80ed6b71fc1c64ddf"
+  },
+  {
+    "file": "sources/db-us-Amulets.html",
+    "url": "https://poe2db.tw/us/Amulets",
+    "sha256": "c485f25169ae01ca31ca6f3fbf75b796478e31097e8c47597b7bc11e34a5f3b1"
+  },
+  {
+    "file": "sources/db-us-Ancient_Concentrated_Liquid_Isolation.html",
+    "url": "https://poe2db.tw/us/Ancient_Concentrated_Liquid_Isolation",
+    "sha256": "162e82f2b013a7ee4ff4ced984c3d59c7c81031cd8a1df321222ec42f78e928f"
+  },
+  {
+    "file": "sources/db-us-Ancient_Potent_Liquid_Ferocity.html",
+    "url": "https://poe2db.tw/us/Ancient_Potent_Liquid_Ferocity",
+    "sha256": "76f103bfa60f137e37bd47b74647488b7dfe3efbfcb168c7ee11249928ce06af"
+  },
+  {
+    "file": "sources/db-us-Animus_Splinters.html",
+    "url": "https://poe2db.tw/us/Animus_Splinters",
+    "sha256": "0c1097201e213c39c6f17090562c922489910ad20d80e060fd8e6ddcded5eee6"
+  },
+  {
+    "file": "sources/db-us-Armour.html",
+    "url": "https://poe2db.tw/us/Armour",
+    "sha256": "f8dadbf117e29d0e3486f6ae71f5200f80c957f88c0303a425e04112480ff7a5"
+  },
+  {
+    "file": "sources/db-us-Belts.html",
+    "url": "https://poe2db.tw/us/Belts",
+    "sha256": "6b63a48f025cf0708900cbb0c273960ee012fb4330c361f2f64901e2e73d0307"
+  },
+  {
+    "file": "sources/db-us-Black_Scythe_Artifact.html",
+    "url": "https://poe2db.tw/us/Black_Scythe_Artifact",
+    "sha256": "40d56a7cf55224728d4d1403c01c76f9fa63339370f121ad11e39b57ff48b2ab"
+  },
+  {
+    "file": "sources/db-us-Body_Armours.html",
+    "url": "https://poe2db.tw/us/Body_Armours",
+    "sha256": "e837f413747015cfe8ef60ff78b6e6492e79679a59bbb47bc979c4fa42447e24"
+  },
+  {
+    "file": "sources/db-us-Bonded_Modifiers.html",
+    "url": "https://poe2db.tw/us/Bonded_Modifiers",
+    "sha256": "7ef11f0d3d619d14f741b3a8511d4217dff5207bb3afc2c12f17498b0de6040e"
+  },
+  {
+    "file": "sources/db-us-Boots.html",
+    "url": "https://poe2db.tw/us/Boots",
+    "sha256": "67435551b725bb92df4355862eaaa3dae09050353726390f5af966f914831dd7"
+  },
+  {
+    "file": "sources/db-us-Bows.html",
+    "url": "https://poe2db.tw/us/Bows",
+    "sha256": "37623cee379032f75d1c83a7b698f985dc6f3ca28504d71763b31d53e533507c"
+  },
+  {
+    "file": "sources/db-us-Broken_Circle_Artifact.html",
+    "url": "https://poe2db.tw/us/Broken_Circle_Artifact",
+    "sha256": "0ee438a2bb4817119971e4e94816d11c53181721c284f4fa7943c817dfc584aa"
+  },
+  {
+    "file": "sources/db-us-Bucklers.html",
+    "url": "https://poe2db.tw/us/Bucklers",
+    "sha256": "4797b07f0d5519449d6b4064a85fcf6ea772f2c6eb018498a8ea7a12edbd8b15"
+  },
+  {
+    "file": "sources/db-us-Charms.html",
+    "url": "https://poe2db.tw/us/Charms",
+    "sha256": "f88d93628c4d88787017d2634851bf16f561b6bedcb1714a42ccdb90ba142710"
+  },
+  {
+    "file": "sources/db-us-Crossbows.html",
+    "url": "https://poe2db.tw/us/Crossbows",
+    "sha256": "65b44c45407feb7a2664ff65a19e0ac12e4448ff522470f54257eb17c1428af7"
+  },
+  {
+    "file": "sources/db-us-Currency.html",
+    "url": "https://poe2db.tw/us/Currency",
+    "sha256": "c8b4182ccde43694f567005eaa69dc66f135426b09f17c5650740a3c52034a79"
+  },
+  {
+    "file": "sources/db-us-Dance_with_Death.html",
+    "url": "https://poe2db.tw/us/Dance_with_Death",
+    "sha256": "47384e631387e425c706677f577bcd5e094bc90c732776b0878326851aed1edd"
+  },
+  {
+    "file": "sources/db-us-Djinn_Barya.html",
+    "url": "https://poe2db.tw/us/Djinn_Barya",
+    "sha256": "8020b65f34ed5e5b95353e18cd8241097099c3f12248b08ce7a3f8cbd2f7fd7e"
+  },
+  {
+    "file": "sources/db-us-Durability.html",
+    "url": "https://poe2db.tw/us/Durability",
+    "sha256": "72cfc8eee63613d46d8c1f1f42756f0f5a67a8bd541ecf32f17bf1b12022e763"
+  },
+  {
+    "file": "sources/db-us-Exotic_Coinage.html",
+    "url": "https://poe2db.tw/us/Exotic_Coinage",
+    "sha256": "241357de6503a7593c26961fb7aed92204d2d7301547a29aa196b1dd3e54c437"
+  },
+  {
+    "file": "sources/db-us-Flasks.html",
+    "url": "https://poe2db.tw/us/Flasks",
+    "sha256": "650296e2e757618c95af5dbeb179f465c3b4ea99d8283e913ee17683b9f19e1e"
+  },
+  {
+    "file": "sources/db-us-Foci.html",
+    "url": "https://poe2db.tw/us/Foci",
+    "sha256": "34fbd624a1c580da0a3d163986e2ae0e57284eb70c99bc91deb6863aa1360b02"
+  },
+  {
+    "file": "sources/db-us-Gloves.html",
+    "url": "https://poe2db.tw/us/Gloves",
+    "sha256": "f60913a8c1bfc9f674cc4cca3b7f1009710236c1a28952401f4661f6c3fcdfc2"
+  },
+  {
+    "file": "sources/db-us-Helmets.html",
+    "url": "https://poe2db.tw/us/Helmets",
+    "sha256": "6103a173291c022f969b8d01c2e5ad9e7a9070650a9c60d06782143c189e8b1a"
+  },
+  {
+    "file": "sources/db-us-Idol.html",
+    "url": "https://poe2db.tw/us/Idol",
+    "sha256": "90fa9a9158d98e21aa3a9d66eaa28a37285d1d74d5d39feda2a92615ca1345ea"
+  },
+  {
+    "file": "sources/db-us-Items.html",
+    "url": "https://poe2db.tw/us/Items",
+    "sha256": "98b093606b2f280dd107d651a79bd12babd1467da9f5e20492ee7bec2c461a63"
+  },
+  {
+    "file": "sources/db-us-Jewels.html",
+    "url": "https://poe2db.tw/us/Jewels",
+    "sha256": "491e83f99ab5ea5c6e83eb0958e7ed0edda23f50d8900a3c54d53bd6ce27644f"
+  },
+  {
+    "file": "sources/db-us-One_Hand_Maces.html",
+    "url": "https://poe2db.tw/us/One_Hand_Maces",
+    "sha256": "56362ce8354233c4b3172eb3f33cdcfab14c60b8aeba12474f42897d192ecc46"
+  },
+  {
+    "file": "sources/db-us-Order_Artifact.html",
+    "url": "https://poe2db.tw/us/Order_Artifact",
+    "sha256": "43792108fda237a575c189e1a05725ddb2cb27a55d5fc84973d896e20c80bf35"
+  },
+  {
+    "file": "sources/db-us-Quarterstaves.html",
+    "url": "https://poe2db.tw/us/Quarterstaves",
+    "sha256": "5a4c0ba2b4f5f0f49c49d93f8a4e089cf69c5ae0887539d6b76322fa76fbbe57"
+  },
+  {
+    "file": "sources/db-us-Quivers.html",
+    "url": "https://poe2db.tw/us/Quivers",
+    "sha256": "6790f0fc4403ae34285b9673f885a67513c2b93c7c0875391c738ce82dee2b91"
+  },
+  {
+    "file": "sources/db-us-Rings.html",
+    "url": "https://poe2db.tw/us/Rings",
+    "sha256": "7dfa0fe53c3b0f0131de34ee6c10c7a3add25d737a4555498e7cce482a012171"
+  },
+  {
+    "file": "sources/db-us-Rogues_Marker.html",
+    "url": "https://poe2db.tw/us/Rogues_Marker",
+    "sha256": "1737d9c6bc15b37e62c54f1d226bc47a6f7a79d9ac7ca62297c032e400cfaacf"
+  },
+  {
+    "file": "sources/db-us-Rondel_de_Ezo.html",
+    "url": "https://poe2db.tw/us/Rondel_de_Ezo",
+    "sha256": "b559541ccf456a66f820f453c9cabe86bbc1766a481848d688a3b78ca9081861"
+  },
+  {
+    "file": "sources/db-us-Runes.html",
+    "url": "https://poe2db.tw/us/Runes",
+    "sha256": "2379026919e3c23c37ef5ae6ae1de117449a464eb5e19b33e2c5a5370de52031"
+  },
+  {
+    "file": "sources/db-us-Ruthless.html",
+    "url": "https://poe2db.tw/us/Ruthless",
+    "sha256": "e4b2077fb4ded1de1bb0aa52306c2bce13b485fc0ccb28d66408d0dbf8a77d2e"
+  },
+  {
+    "file": "sources/db-us-Sceptres.html",
+    "url": "https://poe2db.tw/us/Sceptres",
+    "sha256": "a1f35afb7ca3d20b46bcda24f8a425993674f807597855bd033fe43df94efa11"
+  },
+  {
+    "file": "sources/db-us-Shattered_Triskelion.html",
+    "url": "https://poe2db.tw/us/Shattered_Triskelion",
+    "sha256": "9ac32d03a44a7e2e5d24af8bdb10af3be1c09e651ccca062dde5cd12590357a8"
+  },
+  {
+    "file": "sources/db-us-Shields.html",
+    "url": "https://poe2db.tw/us/Shields",
+    "sha256": "57e6e66e382e077acc90d37c98c2de536040cae543fc06e86cf2de63788a8b60"
+  },
+  {
+    "file": "sources/db-us-Skill_Gems.html",
+    "url": "https://poe2db.tw/us/Skill_Gems",
+    "sha256": "7261de2c4766f68ed7fd14d201c098bec8be3a25561b82510aeb69d1d34ac8c7"
+  },
+  {
+    "file": "sources/db-us-Soul_Core.html",
+    "url": "https://poe2db.tw/us/Soul_Core",
+    "sha256": "7fc37797da871dacc799d70db7d1cf9b5adce13d1c6298d0dff52c0faa95e318"
+  },
+  {
+    "file": "sources/db-us-Spears.html",
+    "url": "https://poe2db.tw/us/Spears",
+    "sha256": "ef42ed38c642141843b57a452e82bc4edd6133247c5cd6600865ec1fc931c015"
+  },
+  {
+    "file": "sources/db-us-Staves.html",
+    "url": "https://poe2db.tw/us/Staves",
+    "sha256": "f342199eba49dd77e78010ededf50cb800f9fa436d8f96ccdb09c75671a4b551"
+  },
+  {
+    "file": "sources/db-us-Sun_Artifact.html",
+    "url": "https://poe2db.tw/us/Sun_Artifact",
+    "sha256": "0852b314a401309437d98d40fe1c59c21671a7ffef38df35a42716dd9a01257f"
+  },
+  {
+    "file": "sources/db-us-Support_Gems.html",
+    "url": "https://poe2db.tw/us/Support_Gems",
+    "sha256": "f754a809c6595c589e658ec61a63acba4d87d13811e1e1e0ecfc3f51af9a0b76"
+  },
+  {
+    "file": "sources/db-us-Tablets.html",
+    "url": "https://poe2db.tw/us/Tablets",
+    "sha256": "1f36fcfc610d90a954a4dee6e0f9fc6810de173078ad485fbf69d2e22f64c27b"
+  },
+  {
+    "file": "sources/db-us-Talismans.html",
+    "url": "https://poe2db.tw/us/Talismans",
+    "sha256": "cddf8bb9277a8b4aa4cb4898f2f76133da1aa1d22897142cf3280d59f70e190e"
+  },
+  {
+    "file": "sources/db-us-Test_of_Cunning_Barya.html",
+    "url": "https://poe2db.tw/us/Test_of_Cunning_Barya",
+    "sha256": "e92edee717149985e0ade248918ee1763d358ab0acf34900409e545ae6bed654"
+  },
+  {
+    "file": "sources/db-us-Test_of_Strength_Barya.html",
+    "url": "https://poe2db.tw/us/Test_of_Strength_Barya",
+    "sha256": "092c2c2f55feac63a94257fdfef448cdd5874f93ee146db295c1a6e996bb828e"
+  },
+  {
+    "file": "sources/db-us-Test_of_Time_Barya.html",
+    "url": "https://poe2db.tw/us/Test_of_Time_Barya",
+    "sha256": "1343f0f28cc716600a52280c3d5339e6607c5f02d25258dae648d8e1451b463b"
+  },
+  {
+    "file": "sources/db-us-Test_of_Will_Barya.html",
+    "url": "https://poe2db.tw/us/Test_of_Will_Barya",
+    "sha256": "4239a89f4aca6a747bc837c02d6dae9f144b7c50823e4d2d72a5789c00e34f20"
+  },
+  {
+    "file": "sources/db-us-The_Burden_of_Shadows.html",
+    "url": "https://poe2db.tw/us/The_Burden_of_Shadows",
+    "sha256": "a37f40767fd65426a6da0118bbcc4c78bab7a5a62515df0e3b37e972ca456f17"
+  },
+  {
+    "file": "sources/db-us-The_Masters_Reach.html",
+    "url": "https://poe2db.tw/us/The_Masters_Reach",
+    "sha256": "b4255a437715bf5135e0e462d567a15b2591737ed89cbba89f74f8cc95343f49"
+  },
+  {
+    "file": "sources/db-us-Two_Hand_Maces.html",
+    "url": "https://poe2db.tw/us/Two_Hand_Maces",
+    "sha256": "b31f6f3aad8631c783f9742d2df8de909546ebd795de857dfa41be91cea27d97"
+  },
+  {
+    "file": "sources/db-us-Uncut_Skill_Gem.html",
+    "url": "https://poe2db.tw/us/Uncut_Skill_Gem",
+    "sha256": "0066961b0c6e83f47cab69910e0f9eea2b084f4509c566fb7f014edfeb3e7df9"
+  },
+  {
+    "file": "sources/db-us-Uncut_Spirit_Gem.html",
+    "url": "https://poe2db.tw/us/Uncut_Spirit_Gem",
+    "sha256": "619424b0d526411b044c7b9b2957b0b12311df37245e36cc6a83f15b5f8402d7"
+  },
+  {
+    "file": "sources/db-us-Uncut_Support_Gem.html",
+    "url": "https://poe2db.tw/us/Uncut_Support_Gem",
+    "sha256": "23e0637c404a8826df7b84b486ae848379721d1a3f85d5bba0dc1d305c19faf7"
+  },
+  {
+    "file": "sources/db-us-Unique_item.html",
+    "url": "https://poe2db.tw/us/Unique_item",
+    "sha256": "335ca1269e54fb7dd4d3ae9a1b08c925448a1d8db838907f5b7f772c569b70a3"
+  },
+  {
+    "file": "sources/db-us-Wands.html",
+    "url": "https://poe2db.tw/us/Wands",
+    "sha256": "f3ad026167c8d536870b4e6c20086a921b705a91f0a3d349d7e848f236ef23e3"
+  },
+  {
+    "file": "sources/db-us-Waystones.html",
+    "url": "https://poe2db.tw/us/Waystones",
+    "sha256": "a450cf0cb3838964ac1214ef8df64baad5148beea73a7882c849f9c3af8fb6fe"
+  },
+  {
+    "file": "sources/db-us-Weapons.html",
+    "url": "https://poe2db.tw/us/Weapons",
+    "sha256": "f88cf77bc67b36e2fb416bf1c13b5a5799de8a3e48361c3e10ead866f4d5fb73"
+  },
+  {
+    "file": "sources/trade-items-en.json",
+    "url": "https://www.pathofexile.com/api/trade2/data/items",
+    "sha256": "f2f847b528181c06ed3ff559387560023fab572a4f50df79b2ca51532c441220"
+  },
+  {
+    "file": "sources/trade-stats-en.json",
+    "url": "https://www.pathofexile.com/api/trade2/data/stats",
+    "sha256": "50ce93554b752119ea12e5482c6ba2ce95feec6f7100fa17d9cf74eb1ed0fdd3"
+  },
+  {
+    "file": "sources/trade-static-en.json",
+    "url": "https://www.pathofexile.com/api/trade2/data/static",
+    "sha256": "1d5d84c1b09cd24fa9354bef2714801b661381dcc70fbebe9d136cef515a01a4"
+  },
+  {
+    "file": "sources/trade-filters-en.json",
+    "url": "https://www.pathofexile.com/api/trade2/data/filters",
+    "sha256": "10dd5540736a1d8c2a26455a1292a63366b8214bb43c7cf9e16023de4490d7e0"
+  },
+  {
+    "file": "sources/trade-items-tw.json",
+    "url": "https://pathofexile.tw/api/trade2/data/items",
+    "sha256": "059a6801fbc8df37ef442ae0b765991a8d672d33bc6fcfd72a0b4023bc200880"
+  },
+  {
+    "file": "sources/trade-stats-tw.json",
+    "url": "https://pathofexile.tw/api/trade2/data/stats",
+    "sha256": "eb783187b4ac11e897aeb7189a7e31d221b6cf159a5d38482d9532d5a8cb53cb"
+  },
+  {
+    "file": "sources/trade-static-tw.json",
+    "url": "https://pathofexile.tw/api/trade2/data/static",
+    "sha256": "ed28f565c903464e04762966549ef9b2250af2f397bed0eee2251c62e4343a42"
+  },
+  {
+    "file": "sources/trade-filters-tw.json",
+    "url": "https://pathofexile.tw/api/trade2/data/filters",
+    "sha256": "44051565f7947cd698161bdd27f152b702870ab5277c4911ea6ead8a4de9b162"
+  }
+]

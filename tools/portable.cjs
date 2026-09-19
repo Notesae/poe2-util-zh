@@ -1,0 +1,1 @@
+const fs=require('fs');for(const dir of ['tests','tools'])for(const file of fs.readdirSync(dir).filter(x=>x.endsWith('.cjs'))){const p=dir+'/'+file,s=fs.readFileSync(p,'utf8');fs.writeFileSync(p,s.replaceAll("require(process.env.PLAYWRIGHT_MODULE || 'playwright')","require(process.env.PLAYWRIGHT_MODULE || 'playwright')"))}

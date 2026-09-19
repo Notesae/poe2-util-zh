@@ -1,0 +1,28 @@
+# Release assets are attached to tags, never committed.
+/dist/
+*.zip
+*.7z
+node_modules/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+
+# Isolated browser profiles and generated verification output.
+/tests/*profile*/
+/tests/*.png
+/tests/live-sites-check.json
+
+# Downloaded source pages and exploratory snapshots (recreated by update-data).
+/sources/*.html
+/sources/*.js
+/sources/charm-tree.json
+/sources/conflicts.json
+/charm-tree.json
+/modifiers.html
+/stats.csv
+/poe2-trade-tw/*
+!/poe2-trade-tw/json/
+/poe2-trade-tw/json/*
+!/poe2-trade-tw/json/translate.json
+!/poe2-trade-tw/json/translate.zh_TW.json

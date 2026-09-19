@@ -1,0 +1,3 @@
+POE2_SITE_UI.maxroll={
+ 'Build Guides':'流派指南','Build Planner':'構築規劃器','Planner':'規劃器','Tier Lists':'強度排行','Tier List':'強度排行','Resources':'資料','Latest News':'最新消息','Latest Articles':'最新文章','Featured':'精選','Featured Builds':'精選流派','Leveling':'練等','Leveling Guide':'練等指南','Endgame':'終局','Endgame Builds':'終局流派','League Starter':'開季流派','Starter Builds':'開荒流派','Beginner':'新手','Beginners':'新手','Advanced':'進階','Gear':'裝備','Gear Progression':'裝備成長','Skill Gems':'技能寶石','Passive Skill Tree':'天賦技能樹','Gameplay':'玩法','Playstyle':'操作方式','Summary':'概要','Changelog':'更新紀錄','Table of Contents':'目錄','Pros':'優點','Cons':'缺點','Pros & Cons':'優缺點','Variants':'變體','Recommended':'推薦','Mechanics':'機制','Bossing':'首領戰','Mapping':'刷圖','Select a Class':'選擇職業'
+};

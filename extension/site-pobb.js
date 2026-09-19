@@ -1,0 +1,3 @@
+POE2_SITE_UI.pobb={
+ 'Share your Build':'分享你的構築','Create':'建立','Import from pastebin.com':'從 pastebin.com 匯入','Import Code':'匯入代碼','Build Code':'構築代碼','Copy Build Code':'複製構築代碼','Open in Path of Building':'在 Path of Building 開啟','Edit':'編輯','Delete':'刪除','Notes':'筆記','Configuration':'配置','Calcs':'計算','Tree':'天賦樹','Trees':'天賦樹','Main Skill':'主要技能','Full DPS':'完整每秒傷害','Effective Hit Pool':'有效生命池','Max Hit':'最大可承受傷害','Physical Max Hit':'物理最大可承受傷害','Fire Max Hit':'火焰最大可承受傷害','Cold Max Hit':'冰冷最大可承受傷害','Lightning Max Hit':'閃電最大可承受傷害','Chaos Max Hit':'混沌最大可承受傷害','Hit Chance':'命中機率','Crit Chance':'暴擊機率','Crit Multi':'暴擊加成','Attack Rate':'攻擊頻率','Cast Rate':'施法頻率','Movement Speed':'移動速度','Unreserved Mana':'未保留魔力','Unreserved Life':'未保留生命'
+};

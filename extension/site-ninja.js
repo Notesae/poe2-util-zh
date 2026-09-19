@@ -1,0 +1,3 @@
+POE2_SITE_UI.ninja={
+ 'Economy':'經濟','Currency':'通貨','Currency Overview':'通貨總覽','Item Overview':'物品總覽','Price':'價格','Value':'價值','Change':'變動','Last 7 days':'最近 7 天','Volume':'交易量','Listings':'刊登數量','Buy':'買入','Sell':'賣出','Confidence':'可信度','Low confidence':'低可信度','Daily':'每日','History':'歷史','Price history':'價格歷史','Market':'市場','Popular':'熱門','Top':'頂尖','Ladder':'排行榜','Characters':'角色','Character':'角色','Account':'帳號','Main Skills':'主要技能','Main Skill':'主要技能','Unique Items':'傳奇物品','Keystones':'核心天賦','Heatmap':'熱度圖','Passive tree':'天賦樹','Time Machine':'歷史快照','Include':'包含','Exclude':'排除','Show on passive tree':'在天賦樹顯示','Open in Path of Building':'在 Path of Building 開啟','Explore builds':'探索流派','Latest snapshot':'最新快照'
+};

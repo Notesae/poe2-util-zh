@@ -1,0 +1,76 @@
+{
+  "manifest_version": 3,
+  "name": "PoE2 网站中文助手",
+  "version": "0.2.0",
+  "description": "独立汉化 PoE2 市集、NINJA、POBb.in、Maxroll、Mobalytics、Craft of Exile 与官网界面和游戏词条。",
+  "minimum_chrome_version": "111",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.pathofexile.com/trade2/*",
+        "https://pathofexile.com/trade2/*"
+      ],
+      "js": [
+        "data.js",
+        "engine.js",
+        "main.js"
+      ],
+      "world": "MAIN",
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://www.pathofexile.com/trade2/*",
+        "https://pathofexile.com/trade2/*"
+      ],
+      "js": [
+        "modules.js",
+        "bridge.js"
+      ],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "https://poe.ninja/*",
+        "https://www.poe.ninja/*",
+        "https://pobb.in/*",
+        "https://www.pobb.in/*",
+        "https://maxroll.gg/*",
+        "https://www.maxroll.gg/*",
+        "https://mobalytics.gg/*",
+        "https://www.mobalytics.gg/*",
+        "https://craftofexile.com/*",
+        "https://www.craftofexile.com/*",
+        "https://beta.craftofexile.com/*",
+        "https://www.pathofexile.com/*",
+        "https://pathofexile.com/*"
+      ],
+      "exclude_matches": [
+        "https://www.pathofexile.com/trade2/*",
+        "https://pathofexile.com/trade2/*",
+        "https://www.pathofexile.com/trade2",
+        "https://pathofexile.com/trade2"
+      ],
+      "js": [
+        "modules.js",
+        "data.js",
+        "engine.js",
+        "site-common.js",
+        "site-ninja.js",
+        "site-pobb.js",
+        "site-maxroll.js",
+        "site-mobalytics.js",
+        "site-craft.js",
+        "site-official.js",
+        "sites.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

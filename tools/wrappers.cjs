@@ -1,0 +1,4 @@
+const fs=require('fs');let p='extension/engine.js',s=fs.readFileSync(p,'utf8');s=s.replace('const exact=new Map(), templates=new Map(), cache=new Map();','const exact=new Map(), templates=new Map(), cache=new Map(), casefold=new Map();');s=s.replace(' function lookup(raw){',` for(const [key,value]of exact){const lower=key.toLowerCase();if(!casefold.has(lower))casefold.set(lower,value);else if(casefold.get(lower)?.zh!==value.zh)casefold.set(lower,null)}
+ function lookup(raw){`);s=s.replace('let found=exact.get(en)||null;',`let found=exact.get(en)||casefold.get(en.toLowerCase())||null;
+  if(!found&&en.endsWith(' (Local)')){const base=lookup(en.slice(0,-8)),qualifier=exact.get('(Local)');if(base&&qualifier)found={...base,zh:base.zh+' '+qualifier.zh};}
+  if(!found&&en.startsWith('Bonded: ')){const base=lookup(en.slice(8)),prefix=exact.get('Bonded');if(base&&prefix)found={...base,zh:prefix.zh+': '+base.zh};}`);fs.writeFileSync(p,s);
