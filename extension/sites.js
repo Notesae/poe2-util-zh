@@ -10,6 +10,8 @@
   if(zh&&clean.endsWith(':'))zh+=':';
   if(!zh)zh=engine.lookup(trimmed)?.zh;
   if(!zh&&id==='mobalytics'){
+   const property=/^(Cast Time|Cooldown Time|Mana Cost|Cost|Reservation|Cost Multiplier):\s*(\d+(?:\.\d+)?%?)(?:\s*(seconds?|sec|s))?$/i.exec(clean);
+   if(property){const label=uiLower[property[1].toLowerCase()];if(label)zh=label+'：'+property[2]+(property[3]?' 秒':'')}
    const requirement=/^Requires:\s*(\d+)\s+Level\.?$/i.exec(clean);
    if(requirement)zh='需求：等級 '+requirement[1];
    const set=/^Set (\d+)$/.exec(clean);if(set)zh='第 '+set[1]+' 組';

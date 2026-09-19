@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PoE2 网站中文助手",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "独立汉化 PoE2 市集、NINJA、POBb.in、Maxroll、Mobalytics、Craft of Exile 与官网界面和游戏词条。",
   "minimum_chrome_version": "111",
   "permissions": [

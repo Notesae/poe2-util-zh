@@ -11,3 +11,4 @@ assert.equal(e.display('Used when you become Ignited'),'當你被點燃時使用
 console.log('PASS: parenthesized, signed and decimal numeric ranges');
 for(const [en,zh]of [['+(10-19) to maximum Life','+(10-19)最大生命'],['+(6-10)% to Fire Resistance','+(6-10)% 火焰抗性'],['+(6-10)% to Cold Resistance','+(6-10)% 冰冷抗性']])assert.equal(e.display(en).replace(/\s/g,''),zh.replace(/\s/g,''));
 console.log('PASS: signed parenthesized Mobalytics modifier ranges');
+assert.equal(e.display('Marks from Supported Skills are not Consumed the\nfirst time they Activate'),'被輔助的技能造成的印記在第一次啟動時不會被消耗');

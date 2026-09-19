@@ -40,6 +40,16 @@ assert.equal(registry.settings({enabled:false},'ninja').enabled,true);
   }
   await page.goto('https://mobalytics.gg/poe-2/builds/example');
   await page.evaluate(()=>{
+   const gem=document.createElement('div');gem.id='gem-tip';gem.innerHTML='<p id="cast">Cast Time: <span id="cast-value">0.0</span></p><p id="gem-description">Supports <span>Mark</span> Skills, causing them to not be Consumed the first time they are Activated.</p><p id="gem-effect">Marks from Supported Skills are not Consumed the<br>first time they Activate</p>';document.body.append(gem);window.gemOriginal=gem.innerHTML;
+  });
+  await page.waitForFunction(()=>document.querySelector('#cast').textContent==='施放時間：0.0');
+  assert.equal(await page.locator('#gem-description').innerText(),'輔助印記技能，使其在第一次啟動時不會被消耗。');
+  assert.equal((await page.locator('#gem-effect').innerText()).trim(),'被輔助的技能造成的印記在第一次啟動時不會被消耗');
+  await set('mobalytics',false);await page.waitForFunction(()=>document.querySelector('#gem-tip').innerHTML===window.gemOriginal);
+  await set('mobalytics',true,true);await page.waitForFunction(()=>document.querySelector('#cast').textContent==='施放時間：0.0 (Cast Time: 0.0)');
+  await page.locator('#cast-value').evaluate(el=>el.firstChild.nodeValue='1.25');await page.waitForFunction(()=>document.querySelector('#cast').textContent==='施放時間：1.25 (Cast Time: 1.25)');
+  await set('mobalytics',true);await page.waitForFunction(()=>document.querySelector('#cast').textContent==='施放時間：1.25');
+  await page.evaluate(()=>{
    const tip=document.createElement('div');tip.id='moba-tip';tip.innerHTML='<p id="requires">Requires: <span id="required-level">1</span> Level.</p><ul><li><span id="moba-life">+<span id="life-range">(10-19)</span> to maximum <span>Life</span></span><span class="tier">P13</span></li><li><span id="moba-fire">+(6-10)% to Fire Resistance</span><span class="tier">S8</span></li><li><span id="moba-cold">+<span>(6-10)</span>% to <span>Cold Resistance</span></span><span class="tier">S8</span></li></ul><button id="track">Track Build</button>';document.body.append(tip);window.mobaOriginal=tip.innerHTML;
   });
   await page.waitForFunction(()=>document.querySelector('#requires').textContent==='需求：等級 1');

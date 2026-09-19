@@ -1,9 +1,42 @@
 [
- {"en":"Druid","zh":"德魯伊","source":"https://poe2db.tw/tw/Druid"},
- {"en":"Huntress","zh":"女獵人","source":"https://poe2db.tw/tw/Huntress"},
- {"en":"Lich","zh":"巫妖","source":"https://poe2db.tw/tw/Lich"},
- {"en":"Abyssal Lich","zh":"深淵妖巫","source":"https://poe2db.tw/tw/Abyssal_Lich"},
- {"en":"Point Blank","zh":"零點射擊","source":"https://poe2db.tw/tw/Point_Blank"},
- {"en":"Far Shot","zh":"遠射","source":"https://poe2db.tw/tw/Far_Shot"},
- {"en":"Bullseye","zh":"靶心","source":"https://poe2db.tw/tw/Bullseye"}
+  {
+    "en": "Druid",
+    "zh": "德魯伊",
+    "source": "https://poe2db.tw/tw/Druid"
+  },
+  {
+    "en": "Huntress",
+    "zh": "女獵人",
+    "source": "https://poe2db.tw/tw/Huntress"
+  },
+  {
+    "en": "Lich",
+    "zh": "巫妖",
+    "source": "https://poe2db.tw/tw/Lich"
+  },
+  {
+    "en": "Abyssal Lich",
+    "zh": "深淵妖巫",
+    "source": "https://poe2db.tw/tw/Abyssal_Lich"
+  },
+  {
+    "en": "Point Blank",
+    "zh": "零點射擊",
+    "source": "https://poe2db.tw/tw/Point_Blank"
+  },
+  {
+    "en": "Far Shot",
+    "zh": "遠射",
+    "source": "https://poe2db.tw/tw/Far_Shot"
+  },
+  {
+    "en": "Bullseye",
+    "zh": "靶心",
+    "source": "https://poe2db.tw/tw/Bullseye"
+  },
+  {
+    "en": "Marks from Supported Skills are not Consumed the first time they Activate",
+    "zh": "被輔助的技能造成的印記在第一次啟動時不會被消耗",
+    "source": "https://poe2db.tw/tw/Eternal_Mark (paired with /us/Eternal_Mark; joined display line break)"
+  }
 ]
