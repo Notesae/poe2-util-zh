@@ -49,7 +49,8 @@ assert.equal(registry.settings({enabled:false},'ninja').enabled,true);
   await set('trade',true);await page.waitForFunction(()=>document.querySelector('h1').textContent==='搜尋');
   await popup.reload();await popup.waitForSelector('#ninja-enabled');assert.equal(await popup.locator('#ninja-enabled').isChecked(),false);assert.equal(await popup.locator('#maxroll-enabled').isChecked(),true);
   await popup.locator('#ninja-enabled').check();assert.equal((await popup.evaluate(()=>chrome.storage.local.get('module.ninja')))['module.ninja'].enabled,true);
-  await popup.setViewportSize({width:400,height:600});await popup.screenshot({path:'tests/modules-popup.png',fullPage:true});assert(await popup.evaluate(()=>document.body.scrollHeight<=600),'Popup fits browser height limit');assert.deepEqual(errors,[]);
+  await popup.setViewportSize({width:560,height:600});await popup.screenshot({path:'tests/modules-popup.png',fullPage:true});assert(await popup.evaluate(()=>document.body.scrollHeight<=600),'Popup fits browser height limit');
+  assert(await popup.evaluate(()=>{const grid=document.querySelector('#modules');return grid.scrollHeight===grid.clientHeight&&document.documentElement.scrollWidth<=560}),'All cards fit without nested or horizontal scrolling');assert.deepEqual(errors,[]);
   console.log('PASS: six actual MV3 site modules, 7 popup controls, live restore, bilingual persistence, dynamic values, protected fields, SPA routing, trade/official isolation');
  }finally{await context.close();const resolved=path.resolve(profile);assert.equal(path.dirname(resolved),path.resolve('tests'));assert(path.basename(resolved).startsWith('sites-profile-'));fs.rmSync(resolved,{recursive:true,force:true})}
 })().catch(e=>{console.error(e);process.exitCode=1});

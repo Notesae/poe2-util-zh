@@ -1,7 +1,7 @@
 import pathlib,zipfile,json,hashlib,py_compile
 root=pathlib.Path.cwd();out=root/'dist';out.mkdir(exist_ok=True)
 tools=['build-data.py','collect-pairs.py','collect-mods.cjs','collect-extra.cjs','coverage.cjs','item-coverage.cjs','update-data.py','snapshot.py']
-tests=['engine.test.cjs','data-coverage.test.cjs','browser.test.cjs','extension.test.cjs','sites.test.cjs','live-sites-check.cjs','live-sites-check.json']
+tests=['engine.test.cjs','data-coverage.test.cjs','browser.test.cjs','extension.test.cjs','sites.test.cjs','live-sites-check.cjs']
 for name in tools:
  if name.endswith('.py'):py_compile.compile(str(root/'tools'/name),doraise=True)
 installer=list((root/'extension').glob('*'))+[root/'README.md',root/'SOURCES.md']

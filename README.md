@@ -1,5 +1,17 @@
 # PoE2 网站中文助手
 
+源码仓库：https://github.com/Notesae/poe2-util-zh
+
+## 源码安装与发布
+
+克隆仓库后可直接在浏览器扩展管理页加载 `extension` 文件夹。弹窗采用双列小卡片，七个模块同屏设置；汉化与双语开关分别保存。
+
+仓库不跟踪 `dist`、压缩包、浏览器测试配置和截图。内置 `extension/data.js` 是运行时必需词库，随源码保留。
+
+发布时先让 `extension/manifest.json` 与 `package.json` 的版本号一致，再推送对应 `v版本号` tag，例如 `v0.2.0`。GitHub Actions 会检查词库、打包并将 ZIP 附加到该 tag 的 GitHub Release；产物不会提交回仓库。本次只上传源码，尚未创建发布 tag。
+
+本地打包：`python tools/release.py`。输出到 `dist`，不需要下载资料或安装额外 Python 包。
+
 ## 0.2.0：独立网站模块
 
 保留市集汉化，新增六个网站模块。扩展弹窗中每个模块有独立的「启用汉化」和「中英双语」开关；设置跨页面保存。旧版市集开关和双语偏好自动兼容。网站模块没有共用总开关，关闭一个不会关闭其他模块。

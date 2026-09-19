@@ -1,8 +1,13 @@
-<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>PoE2 网站中文助手</title><link rel="stylesheet" href="popup.css"><body>
-<h1>PoE2 网站中文助手</h1><p class="subtitle">独立模块 · 独立开关 · 繁体游戏译名</p>
-<div id="status" role="status">正在读取当前页状态…</div>
-<div id="modules" aria-label="网站功能模块"></div>
-<p class="hint">每个网站独立保存设置。市集设置修改后会刷新市集；其他网站即时生效。关闭汉化仍会保留双语偏好。</p>
-<button id="export">导出当前页未匹配文字</button>
-<p class="hint">覆盖界面标签及词库内的游戏词条；攻略长文、玩家帖子、图片和画布文字不保证汉化。未匹配内容保留原文。导出内容分享前请检查。</p>
-<script src="modules.js"></script><script src="popup.js"></script></body></html>
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>PoE2 网站中文助手</title>
+<link rel="stylesheet" href="popup.css">
+<body>
+<header><div><h1>PoE2 中文助手</h1><p class="subtitle">网站汉化 · 每站独立设置</p></div><span class="version">7 个模块</span></header>
+<div id="status" role="status">正在读取当前页…</div>
+<main id="modules" aria-label="网站功能模块"></main>
+<footer><p>市集设置会刷新页面，其他网站即时生效。</p><button id="export">导出未匹配文字</button></footer>
+<details><summary>翻译范围与使用说明</summary><p>覆盖界面标签及词库内游戏词条，不含攻略全文、图片或画布文字。关闭汉化仍保留双语偏好。更新插件后请刷新网站；导出内容分享前请检查。</p></details>
+<script src="modules.js"></script><script src="popup.js"></script>
+</body></html>
