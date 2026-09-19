@@ -1,6 +1,6 @@
 {
   "name": "poe2-trade-zh",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "scripts": {
     "test": "node tests/engine.test.cjs && node tests/data-coverage.test.cjs && node tests/browser.test.cjs && node tests/extension.test.cjs && node tests/sites.test.cjs",

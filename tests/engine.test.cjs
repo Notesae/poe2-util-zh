@@ -6,3 +6,6 @@ const raw={result:[{id:'explicit',label:'Explicit',entries:[{id:'explicit.stat_1
 const item=e.data({result:[{entries:[{name:'Cloak of Flame',type:'Silk Robe',text:'Cloak of Flame Silk Robe'}]}]},'items').result[0].entries[0];assert.equal(item.name,'Cloak of Flame');assert.equal(item.type,'Silk Robe');assert.match(item.text,/烈炎/);
 const test=create([{en:'From {0} to {1}',zh:'從 {1} 到 {0}',source:'test'},{en:'Repeat {0} and {0}',zh:'重複 {0}',source:'test'}]);assert.equal(test.display('From 12 to 34'),'從 34 到 12');assert.equal(test.display('Repeat 12 and 34'),'Repeat 12 and 34');
 console.log('PASS: values, repeated placeholders, source matches, canonical item fields and stat/option ids');
+for(const range of ['(20-25)','(20—25)','(20–25)','20-25','(-20--10)','(1.5-2.5)'])assert.equal(e.display(range+'% Chance to gain a Charge when you kill an enemy'),'殺死敵人時有'+range+'%機率獲得一顆充能');
+assert.equal(e.display('Used when you become Ignited'),'當你被點燃時使用');
+console.log('PASS: parenthesized, signed and decimal numeric ranges');

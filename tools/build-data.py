@@ -41,6 +41,8 @@ for row in json.loads((root/'sources/official-pairs.json').read_text('utf-8-sig'
  if row['en'].endswith(' (Local)'):
   match=re.search(r' (\([^()]+\))$',row['zh'])
   if match: add('(Local)',match[1],row['source']+' (qualifier)',5)
+for row in json.loads((root/'sources/supplemental-pairs.json').read_text('utf-8-sig')):
+ add(row['en'],row['zh'],row['source'],5)
 for en in ambiguous:
  if records.get(en,{}).get('priority',0)<4: records.pop(en,None)
 data={'version':(root/'sources/version.txt').read_text('utf-8-sig').strip(),'sourcePage':'https://poe2db.tw/tw/PoeCharm','commit':sha,'apiLabels':json.loads((root/'sources/api-labels.json').read_text('utf-8-sig')),'records':list(records.values())}

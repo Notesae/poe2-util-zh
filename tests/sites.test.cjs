@@ -38,6 +38,25 @@ assert.equal(registry.settings({enabled:false},'ninja').enabled,true);
    await page.reload();await page.waitForFunction(label=>document.querySelector('h1').textContent.includes('('+label+')'),label);
    await set(id,true);await page.waitForFunction(zh=>document.querySelector('h1').textContent===zh,zh);
   }
+  await page.goto('https://poe.ninja/poe2/builds');
+  await page.evaluate(()=>{
+   const labels=document.createElement('div');labels.innerHTML='<h2 id="spirit">SPIRIT SKILLS</h2><p id="rare">Rare Belt</p><p id="weapons">Bow / Quiver</p><select id="typed"><option value="original-charm">Charm</option></select>';document.body.append(labels);
+   const tooltip=document.createElement('div');tooltip.id='tooltip';tooltip.setAttribute('role','tooltip');
+   tooltip.innerHTML='<div id="used">Used when you become <span>Ignited</span></div><div id="charge"><span id="range">(20-25)</span>% Chance to gain a <span>Charge</span> when you kill an enemy</div><div id="ground">Creates <span>Ignited Ground</span> for 4 seconds when used, <span>Igniting</span> enemies as though dealing <span>Fire</span> damage equal to <span id="damage">500</span>% of your maximum <span>Life</span></div>';
+   document.body.append(tooltip);window.originalTooltip=tooltip.innerHTML;window.rangeNode=document.querySelector('#range');
+  });
+  await page.waitForFunction(()=>document.querySelector('#used').textContent==='當你被點燃時使用');
+  assert.equal(await page.locator('#spirit').innerText(),'精魂技能');assert.equal(await page.locator('#rare').innerText(),'稀有腰帶');assert.equal(await page.locator('#weapons').innerText(),'弓／箭袋');assert.equal(await page.locator('#typed option').innerText(),'護符');assert.equal(await page.locator('#typed').inputValue(),'original-charm');
+  assert.equal(await page.locator('#charge').innerText(),'殺死敵人時有(20-25)%機率獲得一顆充能');
+  assert.equal(await page.locator('#ground').innerText(),'使用時生成持續4秒的點燃地面來點燃敵人，造成等同於你最大生命500%的火焰傷害');
+  await set('ninja',false);await page.waitForFunction(()=>document.querySelector('#tooltip').innerHTML===window.originalTooltip);
+  assert(await page.evaluate(()=>document.querySelector('#range')===window.rangeNode),'Preserve framework-owned spans');
+  await set('ninja',true);await page.waitForFunction(()=>document.querySelector('#used').textContent==='當你被點燃時使用');
+  await page.locator('#damage').evaluate(el=>el.firstChild.nodeValue='650');await page.waitForFunction(()=>document.querySelector('#ground').textContent.includes('650%'));
+  await set('ninja',true,true);await page.waitForFunction(()=>document.querySelector('#ground').textContent.includes('(Creates Ignited Ground'));
+  assert(!await page.locator('#ground').innerText().then(text=>text.includes('Creates 點燃地面')),'No mixed-language original');
+  await set('ninja',false);await page.waitForFunction(()=>document.querySelector('#ground').textContent.includes('equal to 650%'));
+  await set('ninja',true);
   await page.goto('https://maxroll.gg/poe2?label=Build%20Guides');await page.waitForFunction(()=>document.querySelector('h1').textContent==='流派指南');
   await set('ninja',false);assert.equal(await page.locator('h1').innerText(),'流派指南');
   await page.evaluate(()=>history.pushState({},'','/d4'));await page.waitForFunction(()=>document.querySelector('h1').textContent==='Build Guides');

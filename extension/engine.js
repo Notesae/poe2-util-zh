@@ -3,7 +3,9 @@
 'use strict';
 const norm = s => s.replace(/\[([^\[\]|]+)\|([^\[\]]+)\]/g,'$2').replace(/\[([^\[\]]+)\]/g,'$1').replace(/\s+/g,' ').trim();
 const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
-const signature = s => norm(s).replace(/[+\-]?\{\d+\}%?|[+\-]?(?:\d+(?:\.\d+)?|#)(?:[—–]\d+(?:\.\d+)?)?%?/g,'@');
+const scalar='[+\\-]?(?:\\d+(?:\\.\\d+)?|#)';
+const number='(?:\\('+scalar+'\\s*[-—–]\\s*'+scalar+'\\)|'+scalar+'(?:[-—–]'+scalar+')?)%?';
+const signature = s => norm(s).replace(new RegExp('[+\\-]?\\{\\d+\\}%?|'+number,'g'),'@');
 function create(records,apiLabels={}) {
  const exact=new Map(), templates=new Map(), cache=new Map(), casefold=new Map();
  for(const r of records){
@@ -25,7 +27,7 @@ function create(records,apiLabels={}) {
   if(!found){
    const matches=[];
    for(const t of templates.get(signature(en))||[]){
-    if(!t.regex)t.regex=new RegExp('^'+t.en.split(/\{\d+\}/).map(escape).join('([+\\-]?(?:\\d+(?:\\.\\d+)?|#)(?:[—–]\\d+(?:\\.\\d+)?)?%?)')+'$');
+    if(!t.regex)t.regex=new RegExp('^'+t.en.split(/\{\d+\}/).map(escape).join('('+number+')')+'$');
     const m=t.regex.exec(en);if(!m)continue;
     const values={};let valid=true;
     t.ids.forEach((id,i)=>{if(values[id]!==undefined&&values[id]!==m[i+1])valid=false;values[id]=m[i+1]});
