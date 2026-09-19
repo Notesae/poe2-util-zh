@@ -4,7 +4,7 @@
 const norm = s => s.replace(/\[([^\[\]|]+)\|([^\[\]]+)\]/g,'$2').replace(/\[([^\[\]]+)\]/g,'$1').replace(/\s+/g,' ').trim();
 const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const scalar='[+\\-]?(?:\\d+(?:\\.\\d+)?|#)';
-const number='(?:\\('+scalar+'\\s*[-—–]\\s*'+scalar+'\\)|'+scalar+'(?:[-—–]'+scalar+')?)%?';
+const number='(?:[+\\-]?\\('+scalar+'\\s*[-—–]\\s*'+scalar+'\\)|'+scalar+'(?:[-—–]'+scalar+')?)%?';
 const signature = s => norm(s).replace(new RegExp('[+\\-]?\\{\\d+\\}%?|'+number,'g'),'@');
 function create(records,apiLabels={}) {
  const exact=new Map(), templates=new Map(), cache=new Map(), casefold=new Map();

@@ -38,6 +38,19 @@ assert.equal(registry.settings({enabled:false},'ninja').enabled,true);
    await page.reload();await page.waitForFunction(label=>document.querySelector('h1').textContent.includes('('+label+')'),label);
    await set(id,true);await page.waitForFunction(zh=>document.querySelector('h1').textContent===zh,zh);
   }
+  await page.goto('https://mobalytics.gg/poe-2/builds/example');
+  await page.evaluate(()=>{
+   const tip=document.createElement('div');tip.id='moba-tip';tip.innerHTML='<p id="requires">Requires: <span id="required-level">1</span> Level.</p><ul><li><span id="moba-life">+<span id="life-range">(10-19)</span> to maximum <span>Life</span></span><span class="tier">P13</span></li><li><span id="moba-fire">+(6-10)% to Fire Resistance</span><span class="tier">S8</span></li><li><span id="moba-cold">+<span>(6-10)</span>% to <span>Cold Resistance</span></span><span class="tier">S8</span></li></ul><button id="track">Track Build</button>';document.body.append(tip);window.mobaOriginal=tip.innerHTML;
+  });
+  await page.waitForFunction(()=>document.querySelector('#requires').textContent==='需求：等級 1');
+  assert.match(await page.locator('#moba-life').innerText(),/\+\(10-19\).*最大生命/);
+  assert.match(await page.locator('#moba-fire').innerText(),/\+\(6-10\)%.*火焰抗性/);
+  assert.match(await page.locator('#moba-cold').innerText(),/\+\(6-10\)%.*冰冷抗性/);
+  assert.deepEqual(await page.locator('.tier').allTextContents(),['P13','S8','S8']);assert.equal(await page.locator('#track').innerText(),'追蹤流派');
+  await set('mobalytics',false);await page.waitForFunction(()=>document.querySelector('#moba-tip').innerHTML===window.mobaOriginal);
+  await set('mobalytics',true,true);await page.waitForFunction(()=>document.querySelector('#moba-life').textContent.includes('(+(10-19) to maximum Life)'));
+  await page.locator('#required-level').evaluate(el=>el.firstChild.nodeValue='20');await page.waitForFunction(()=>document.querySelector('#requires').textContent==='需求：等級 20 (Requires: 20 Level.)');
+  await set('mobalytics',true);await page.waitForFunction(()=>document.querySelector('#requires').textContent==='需求：等級 20');
   await page.goto('https://poe.ninja/poe2/builds');
   await page.evaluate(()=>{
    const labels=document.createElement('div');labels.innerHTML='<h2 id="spirit">SPIRIT SKILLS</h2><p id="rare">Rare Belt</p><p id="weapons">Bow / Quiver</p><select id="typed"><option value="original-charm">Charm</option></select>';document.body.append(labels);

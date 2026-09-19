@@ -9,3 +9,5 @@ console.log('PASS: values, repeated placeholders, source matches, canonical item
 for(const range of ['(20-25)','(20—25)','(20–25)','20-25','(-20--10)','(1.5-2.5)'])assert.equal(e.display(range+'% Chance to gain a Charge when you kill an enemy'),'殺死敵人時有'+range+'%機率獲得一顆充能');
 assert.equal(e.display('Used when you become Ignited'),'當你被點燃時使用');
 console.log('PASS: parenthesized, signed and decimal numeric ranges');
+for(const [en,zh]of [['+(10-19) to maximum Life','+(10-19)最大生命'],['+(6-10)% to Fire Resistance','+(6-10)% 火焰抗性'],['+(6-10)% to Cold Resistance','+(6-10)% 冰冷抗性']])assert.equal(e.display(en).replace(/\s/g,''),zh.replace(/\s/g,''));
+console.log('PASS: signed parenthesized Mobalytics modifier ranges');

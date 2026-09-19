@@ -9,6 +9,12 @@
   let zh=ui[clean]||ui[clean.replace(/:$/,'')]||uiLower[clean.toLowerCase().replace(/:$/,'')];
   if(zh&&clean.endsWith(':'))zh+=':';
   if(!zh)zh=engine.lookup(trimmed)?.zh;
+  if(!zh&&id==='mobalytics'){
+   const requirement=/^Requires:\s*(\d+)\s+Level\.?$/i.exec(clean);
+   if(requirement)zh='需求：等級 '+requirement[1];
+   const set=/^Set (\d+)$/.exec(clean);if(set)zh='第 '+set[1]+' 組';
+   const act=/^Act (\d+)$/.exec(clean);if(act)zh='第 '+act[1]+' 章';
+  }
   if(!zh&&id==='ninja'){
    const rarity=/^(Normal|Magic|Rare) (Charm|Belt|Quiver|Amulet|Ring|Helmet|Gloves|Boots|Body Armour|Weapon|Jewel|Flask|Shield|Focus|Bow|Spear|Sceptre)$/.exec(clean);
    if(rarity){const a=engine.lookup(rarity[1]),b=engine.lookup(rarity[2]);if(a&&b)zh=a.zh+b.zh}
@@ -63,9 +69,9 @@
   if(!current?.enabled||!document.body)return;
   observer.disconnect();
   // Reconstruct English first, including after a tooltip reuses just one span.
-  if(id==='ninja')restore(false);
+  if(id==='ninja'||id==='mobalytics')restore(false);
   for(const target of originals.keys())if(!target.isConnected)originals.delete(target);
-  const handled=id==='ninja'?sentences():new WeakSet();
+  const handled=id==='ninja'||id==='mobalytics'?sentences():new WeakSet();
   const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:node=>node.parentElement?.closest(skip)?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT});
   let node;while(node=walker.nextNode())if(!handled.has(node))replace(node,null);
   for(const el of document.querySelectorAll('[placeholder],[aria-label],[title]')){
