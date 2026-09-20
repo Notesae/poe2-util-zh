@@ -11,6 +11,7 @@ __pycache__/
 # Isolated browser profiles and generated verification output.
 /tests/*profile*/
 /tests/*.png
+/output/playwright/
 /tests/live-sites-check.json
 
 # Downloaded source pages and exploratory snapshots (recreated by update-data).

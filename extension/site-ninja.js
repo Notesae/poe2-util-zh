@@ -1,4 +1,15 @@
 POE2_SITE_UI.ninja={
+ // 行情首页实页固定说明；不匹配联盟名称或用户内容。
+ 'Active':'進行中','Previous League':'過往聯盟',
+ 'The Path of Exile 2 economy overviews provide insights based on data from the in-game Currency Exchange. Use this data to track market trends, find trading opportunities, and understand the relative value of different currencies.':'Path of Exile 2 經濟總覽以遊戲內通貨交易所的資料為依據，協助你追蹤市場趨勢、尋找交易機會，並了解不同通貨之間的相對價值。',
+ 'This is different from how the Path of Exile 1 economy overviews work, which are based on stash tab based trading.':'這與 Path of Exile 1 經濟總覽不同，後者以倉庫頁交易資料為依據。',
+ 'Currency Exchange data is aggregated and provided by Grinding Gear Games in hourly chunks, so prices may have up to an hour delay.':'通貨交易所資料由 Grinding Gear Games 每小時彙整提供，因此價格最多可能延遲一小時。',
+ // 行情分类采用编年史 Lineage_Supports 的宝石名称，而非词库其他语境。
+ 'Lineage Gems':'族裔輔助寶石',
+ // 行情与角色筛选的完整标签，不改动联盟名称、角色名或交易数值。
+ 'Unique Weapons':'傳奇武器','Unique Armours':'傳奇防具','Unique Accessories':'傳奇飾品','Unique Flasks':'傳奇藥劑','Unique Charms':'傳奇護符','Unique Jewels':'傳奇珠寶','Unique Relics':'傳奇聖物','Atlas':'輿圖','Unique Tablets':'傳奇碑牌','Precursor Tablets':'先驅碑牌','Search by item…':'依物品搜尋…','Search by item...':'依物品搜尋…','Filter by Name':'依名稱篩選','Value Display':'價格顯示','Adaptive':'自動調整','Volume / Hour':'每小時交易量','Most Popular':'最熱門','Search filters...':'搜尋篩選條件…','Keystone':'核心天賦','Exchange':'兌換',
+ // 联盟选择首页的导航标签；玩家自建联盟名保持原文。
+ 'Available Leagues':'可用聯盟','Challenge Leagues':'挑戰聯盟','Past leagues':'過往聯盟','Permanent Leagues':'永久聯盟','Private Leagues':'私人聯盟','Top Classes Per League':'各聯盟熱門職業','See all builds':'查看全部流派','Streamers':'實況主','Favorites':'收藏','Offensive Stats':'攻擊屬性','Defensive Stats':'防禦屬性','Tree Version History':'天賦樹版本歷史',
  'Passive Skill Tree':'天賦技能樹','Time machine':'歷史快照','Time machine - see the league at earlier stages':'歷史快照：查看聯盟較早階段','Select League':'選擇聯盟','Current leagues':'目前聯盟','Previous leagues':'過往聯盟','Only show items of type':'只顯示指定類型的物品','Spirit Skills':'精魂技能','Main Skill Traits':'主要技能特性','Crit':'暴擊','No Crit':'非暴擊','Damage Type':'傷害類型','Delivery':'施放方式','Passives':'天賦','All Skills':'所有技能','Anointed Passives':'塗油天賦','Weapon Configuration':'武器配置','Add your character':'新增你的角色','Reset all filters':'重設所有篩選','Show passive heatmap':'顯示天賦熱度圖','Columns':'欄位','Skill stat columns':'技能屬性欄位','ES':'能量護盾','EHP':'有效生命池','Support the site':'支持本站','Docs & FAQ':'說明與常見問題','Statistics':'統計','Data dumps':'資料下載','Resources':'資源','Privacy Policy':'隱私政策','Advertise on this site':'在本站刊登廣告',
  'Economy':'經濟','Currency':'通貨','Currency Overview':'通貨總覽','Item Overview':'物品總覽','Price':'價格','Value':'價值','Change':'變動','Last 7 days':'最近 7 天','Volume':'交易量','Listings':'刊登數量','Buy':'買入','Sell':'賣出','Confidence':'可信度','Low confidence':'低可信度','Daily':'每日','History':'歷史','Price history':'價格歷史','Market':'市場','Popular':'熱門','Top':'頂尖','Ladder':'排行榜','Characters':'角色','Character':'角色','Account':'帳號','Main Skills':'主要技能','Main Skill':'主要技能','Unique Items':'傳奇物品','Keystones':'核心天賦','Heatmap':'熱度圖','Passive tree':'天賦樹','Time Machine':'歷史快照','Include':'包含','Exclude':'排除','Show on passive tree':'在天賦樹顯示','Open in Path of Building':'在 Path of Building 開啟','Explore builds':'探索流派','Latest snapshot':'最新快照'
 };

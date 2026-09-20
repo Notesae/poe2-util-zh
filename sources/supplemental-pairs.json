@@ -1,5 +1,30 @@
 [
   {
+    "en": "Inflict Corrupted Blood for {0} seconds on Block, dealing {1}% of your maximum Life as Physical damage per second",
+    "zh": "格擋時對目標造成持續{0}秒的腐化之血，每秒造成等同於你最大生命{1}%的物理傷害",
+    "source": "https://poe2db.tw/tw/Bloodbarrier#explicitMod-3 (existing db-mod-pairs bilingual record; restore space at English display line break and Chinese clause punctuation)"
+  },
+  {
+    "en": "Invoker",
+    "zh": "祈靈者",
+    "source": "https://poe2db.tw/tw/Invoker (paired with /us/Invoker; Monk ascendancy, not the unrelated tree label)"
+  },
+  {
+    "en": "Lineage Supports",
+    "zh": "族裔輔助寶石",
+    "source": "https://poe2db.tw/tw/Lineage_Supports (paired with /Lineage_Supports)"
+  },
+  {
+    "en": "Chaotic Surge",
+    "zh": "混沌波動",
+    "source": "https://poe2db.tw/tw/Chaotic_Surge (paired with /us/Chaotic_Surge)"
+  },
+  {
+    "en": "Chaotic Infusion",
+    "zh": "混沌灌注",
+    "source": "PoeCharm2@86198db8ad707e000d19a4ba19a93720566747f0:Data/Translate/zh-rTW/statDescriptions.csv:40766 (historical skill name extracted from paired trigger modifier; https://poe2db.tw/us/Infusion documents rename to Chaotic Surge; do not replace historical name with current name)"
+  },
+  {
     "en": "Druid",
     "zh": "德魯伊",
     "source": "https://poe2db.tw/tw/Druid"
@@ -38,5 +63,15 @@
     "en": "Marks from Supported Skills are not Consumed the first time they Activate",
     "zh": "被輔助的技能造成的印記在第一次啟動時不會被消耗",
     "source": "https://poe2db.tw/tw/Eternal_Mark (paired with /us/Eternal_Mark; joined display line break)"
+  },
+  {
+    "en": "Frenzy Charge",
+    "zh": "狂怒球",
+    "source": "PoeCharm2@86198db8ad707e000d19a4ba19a93720566747f0:Data/Translate/zh-rTW/statDescriptions.csv:376 (term extracted from paired per Frenzy Charge modifier)"
+  },
+  {
+    "en": "Hits with this Weapon have 5% chance to Trigger Molten Shower per 25 Strength",
+    "zh": "每25力量，此武器造成的擊中有5%機率觸發熔火噴濺",
+    "source": "https://pathofexile.tw/api/trade2/data/stats#/result/explicit/entries/explicit.stat_1867725690/text (only the English 5% instance matches the fixed 5% Chinese snapshot; not a variable template)"
   }
 ]

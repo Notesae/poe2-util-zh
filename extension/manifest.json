@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "PoE2 网站中文助手",
-  "version": "0.2.3",
+  "version": "0.3.1",
   "description": "独立汉化 PoE2 市集、NINJA、POBb.in、Maxroll、Mobalytics、Craft of Exile 与官网界面和游戏词条。",
   "minimum_chrome_version": "111",
   "permissions": [
@@ -13,6 +13,8 @@
   "content_scripts": [
     {
       "matches": [
+        "https://www.pathofexile.com/trade2",
+        "https://pathofexile.com/trade2",
         "https://www.pathofexile.com/trade2/*",
         "https://pathofexile.com/trade2/*"
       ],
@@ -26,12 +28,15 @@
     },
     {
       "matches": [
+        "https://www.pathofexile.com/trade2",
+        "https://pathofexile.com/trade2",
         "https://www.pathofexile.com/trade2/*",
         "https://pathofexile.com/trade2/*"
       ],
       "js": [
         "modules.js",
-        "bridge.js"
+        "bridge.js",
+        "widget.js"
       ],
       "run_at": "document_start"
     },
@@ -68,7 +73,8 @@
         "site-mobalytics.js",
         "site-craft.js",
         "site-official.js",
-        "sites.js"
+        "sites.js",
+        "widget.js"
       ],
       "run_at": "document_idle"
     }

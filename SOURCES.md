@@ -1,5 +1,11 @@
 # 数据来源与归属
 
+0.2.8：腐化之血采用已有 `db-mod-pairs.json` 中 [Bloodbarrier](https://poe2db.tw/tw/Bloodbarrier#explicitMod-3) 完整配对，修复英文显示换行处缺少空格，并补中文句间标点；两个参数保持独立。NINJA 行情首页说明、联盟状态标签与 Craft 固定提示为项目编辑译文。对无参数英文却包含中文参数占位符的条目，引擎拒绝匹配，避免未填参数显示到页面。
+
+0.2.7 术语复核：`supplemental-pairs.json` 记录 [Invoker](https://poe2db.tw/tw/Invoker)、[Lineage Supports](https://poe2db.tw/tw/Lineage_Supports)、[Chaotic Surge](https://poe2db.tw/tw/Chaotic_Surge) 对照。Chaotic Infusion 使用现有 PoeCharm2 配对词缀中的历史译名“混沌灌注”，不因 [改名记录](https://poe2db.tw/us/Infusion) 而改写旧版原文。NINJA 的 Lineage Gems 按上述宝石类别适配；市集 Breach 依据 [裂痕](https://poe2db.tw/tw/Breach)；官网完整品牌依据 [商品 description_tw](https://poedb.tw/sp/Kiracs_Vault_Pass_%28Keepers%29) 的“基拉克的秘寶指南”。这些是来源对照，不宣称均为本项目取得的官方授权译文。
+
+本项目原创代码与文档采用根目录 `LICENSE` 中的 MIT 许可证。该许可证不覆盖第三方译文、游戏数据及其生成物（包括 `extension/data.js`、`sources/`、`poe2-trade-tw/`），也不改变下列上游资料的授权条件。
+
 1. 流亡编年史提供的 PoE2 市集插件词库：
    - https://poe2db.tw/tw/chinese
    - https://poe2db.tw/dls/poe2-trade-tw-0604v3.7z
@@ -41,3 +47,7 @@
 0.2.1 新增 `sources/supplemental-pairs.json`：逐条记录 NINJA 页面缺失的职业、昇华和天赋名称及编年史中文条目 URL；`build-data.py` 构建时保留这些对照。界面组合标签仅由已有中文词条拼接，未生成新的游戏译名。
 
 0.2.3：永恆印記完整效果句对照 PoE2DB 中英文 Eternal_Mark 页面，合并显示换行；Mobalytics 灰色辅助说明由本项目人工翻译，存于独立网站词表，并非官方译文。补充宝石属性数值标签匹配。
+
+0.2.4：审校新增界面标签与动态模板仍属于项目编辑译文。`tools/build-data.py` 不再使用重复 `sep` ID 配对分类标题，而以紧邻的唯一物品 ID 对齐中英文快照，区分「預兆／增幅／魔偶」等类别。`supplemental-pairs.json` 记录狂怒球术语的来源提取，以及熔火噴濺固定 5% 词缀的来源实例；不会将来源固定数值推广为其他数值。
+
+0.2.5：护符效果持续时间奖励使用现有官方快照 `desecrated.stat_1389754388` 对照，未新增猜测性游戏译名。论坛简介、折扣句尾、辅助标签及快捷键说明属于项目编辑译文；DOM 修复以第二轮实页记录的文本节点边界为依据。

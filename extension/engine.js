@@ -4,13 +4,15 @@
 const norm = s => s.replace(/\[([^\[\]|]+)\|([^\[\]]+)\]/g,'$2').replace(/\[([^\[\]]+)\]/g,'$1').replace(/\s+/g,' ').trim();
 const escape = s => s.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');
 const scalar='[+\\-]?(?:\\d+(?:\\.\\d+)?|#)';
-const number='(?:[+\\-]?\\('+scalar+'\\s*[-—–]\\s*'+scalar+'\\)|'+scalar+'(?:[-—–]'+scalar+')?)%?';
+// 支持物品卡的当前值加区间写法，例如 7(5-10)%，整组作为一个参数保留。
+const number='(?:'+scalar+'\\('+scalar+'\\s*[-—–]\\s*'+scalar+'\\)|[+\\-]?\\('+scalar+'\\s*[-—–]\\s*'+scalar+'\\)|'+scalar+'(?:[-—–]'+scalar+')?)%?';
 const signature = s => norm(s).replace(new RegExp('[+\\-]?\\{\\d+\\}%?|'+number,'g'),'@');
 function create(records,apiLabels={}) {
  const exact=new Map(), templates=new Map(), cache=new Map(), casefold=new Map();
  for(const r of records){
   const en=norm(r.en), zh=norm(r.zh).replace(new RegExp(' \\('+escape(r.en)+'\\)$'),'');
-  if (!/\{\d+\}/.test(en)) {exact.set(en,{...r,zh});continue;}
+  // 原文没有参数时，拒绝带未填参数的译文，避免拆句词条直接泄漏 {0}。
+  if (!/\{\d+\}/.test(en)) {if(!/\{\d+\}/.test(zh))exact.set(en,{...r,zh});continue;}
   const ids=[...en.matchAll(/\{(\d+)\}/g)].map(m=>m[1]);
   const zids=[...zh.matchAll(/\{(\d+)\}/g)].map(m=>m[1]);
   if(ids.some(id=>!zids.includes(id))||zids.some(id=>!ids.includes(id))||en.replace(/\{\d+\}/g,'').replace(/[^a-z]/gi,'').length<4)continue;

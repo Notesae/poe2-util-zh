@@ -1,4 +1,17 @@
 POE2_SITE_UI.mobalytics={
+ // 物品库的防御属性前缀同时用于“字段：数值”模板。
+ 'Armour':'護甲值','Evasion':'閃避值',
+ // 七站实页审校补充：使用站点排序含义，避免通用词库的导航／新增语义。
+ 'Top':'熱門','New':'最新','Patch':'版本','Published timeframe':'發佈時間範圍','This week':'本週','This month':'本月','Clear all':'全部清除','Close filters':'關閉篩選','Filter actions':'篩選操作','search by name':'依名稱搜尋','By':'作者','Updated on':'更新於','Beginner':'新手','Mechanics':'機制','Mirror Tier':'魔鏡級',
+ // 任务、规划器和留言区固定提示；作者正文和编辑器输入不在词表中。
+ 'main':'主要','Check which quests you’ve completed on your character':'勾選角色已完成的任務','Not Specified':'未指定','Select reward':'選擇獎勵','Share your thoughts...Type @ to try game data':'分享你的想法…輸入 @ 使用遊戲資料','Normal text':'一般文字','Write something, or press ‘/’ for commands, ‘@’ for game data':'輸入內容，或按「/」使用指令、「@」插入遊戲資料','Add Strengths, separated by Enter':'新增優勢，按 Enter 分隔','Add Weaknesses, separated by Enter':'新增弱點，按 Enter 分隔','Describe build variant...':'描述構築變體…','Copy Code':'複製代碼','Ad Placeholder':'廣告預留位置','Join Creator Program':'加入創作者計畫','Remove Ads':'移除廣告','Go to Tier List Maker':'前往排行製作工具','Save as Image':'儲存為圖片','Commentary':'評述',
+ // 物品库分类与数值字段采用完整标签，覆盖美式拼写与复数形式。
+ 'Unique Weapons List':'傳奇武器列表','Unique Armor List':'傳奇防具列表','Unique Accessories List':'傳奇飾品列表','One-Handed Maces':'單手錘','Two-Handed Maces':'雙手錘','Body Armor':'胸甲','Focuses':'法器','Latest Builds':'最新流派','Base Stats':'基礎屬性','Source':'來源','General drop':'一般掉落','Physical':'物理傷害','Attacks/sec':'每秒攻擊次數','Crit':'暴擊機率','Str':'力量','Dex':'敏捷','Int':'智慧',
+ // 公开首页与导航的固定界面文案，攻略作者正文仍保持原文。
+ 'Creator Builds':'創作者流派','Community Builds':'社群流派','Top Characters':'熱門角色','Verified':'已驗證','Starter':'開荒','Speed Leveling':'快速練等','Trending':'熱門趨勢','All time':'不限時間','Search...':'搜尋…','Latest Guides':'最新指南','All Class and Ascendancy Builds':'所有職業與昇華流派','Beginner Start Guide':'新手入門指南','New Player Page':'新手專區',
+ // 规划器的编辑操作与空状态；只翻译文字标签，不触碰输入值或导入代码。
+ 'Back to Homepage':'返回首頁','Save Draft':'儲存草稿','Reset Build':'重設構築','Default':'預設','Resync Priority':'重新同步優先順序','Drag to adjust the priority':'拖曳以調整優先順序','Empty Skill Gem Socket':'空的技能寶石插槽','Add gems to view the priority list':'加入寶石以查看優先順序','Notable Priority':'重要天賦優先順序','Add skills to view the priority list':'加入技能以查看優先順序','Atlas Tree':'輿圖天賦樹','End of Variants':'變體結束','Changelog':'更新紀錄','Video':'影片','(Optional)':'（選填）','YouTube, Twitch or Vimeo link':'YouTube、Twitch 或 Vimeo 連結','Path of Building Code':'Path of Building 代碼','Path of Building Code or POBb.in Link':'Path of Building 代碼或 POBb.in 連結','Import from Path of Building':'從 Path of Building 匯入','Import Character':'匯入角色','Connect Path of Exile 2 Account':'連結 Path of Exile 2 帳號','Loot Filter':'物品篩選器',
+ 'Endgame Guides Hub':'終局指南總覽','Mechanics Guide Hub':'機制指南總覽','Coming Soon':'即將推出','PoE 2 Guides':'PoE 2 指南','Reveal Summary Page':'前往發表內容摘要','Ask me anything about PoE builds!':'詢問任何 PoE 流派相關問題！',
  'Cast Time':'施放時間','Cooldown Time':'冷卻時間','Mana Cost':'魔力消耗','Cost':'消耗','Reservation':'保留','Cost Multiplier':'消耗倍率',
  // Editorial translation of the Mobalytics description; not an official quotation.
  'Supports Mark Skills, causing them to not be Consumed the first time they are Activated.':'輔助印記技能，使其在第一次啟動時不會被消耗。',

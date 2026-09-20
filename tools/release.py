@@ -15,7 +15,9 @@ if os.environ.get('GITHUB_REF_TYPE') == 'tag' and tag != 'v' + manifest['version
 out = root / 'dist'
 out.mkdir(exist_ok=True)
 target = out / ('poe2-util-zh-' + manifest['version'] + '.zip')
-files = sorted((root / 'extension').rglob('*')) + [root / 'README.md', root / 'SOURCES.md']
+# 随安装包交付原创代码许可证和第三方来源说明。
+# 同时交付最新审校范围，避免把自动化通过误认为全部实页已验收。
+files = sorted((root / 'extension').rglob('*')) + [root / 'README.md', root / 'SOURCES.md', root / 'LICENSE', root / 'TRANSLATION_REVIEW.md', root / 'TRANSLATION_AUDIT_2026-09-20.md', root / 'TRANSLATION_RECHECK_0.2.4.md']
 with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as archive:
     for file in files:
         if file.is_file():
