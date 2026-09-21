@@ -21,7 +21,8 @@
       "js": [
         "data.js",
         "engine.js",
-        "main.js"
+        "main.js",
+        "presets-page.js"
       ],
       "world": "MAIN",
       "run_at": "document_start"
@@ -36,7 +37,8 @@
       "js": [
         "modules.js",
         "bridge.js",
-        "widget.js"
+        "widget.js",
+        "presets.js"
       ],
       "run_at": "document_start"
     },

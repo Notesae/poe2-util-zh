@@ -3,7 +3,7 @@
   "version": "0.3.1",
   "private": true,
   "scripts": {
-    "test": "node tests/engine.test.cjs && node tests/data-coverage.test.cjs && node tests/browser.test.cjs && node tests/extension.test.cjs && node tests/sites.test.cjs",
+    "test": "node tests/engine.test.cjs && node tests/data-coverage.test.cjs && node tests/browser.test.cjs && node tests/extension.test.cjs && node tests/sites.test.cjs && node tests/presets.test.cjs",
     "coverage": "node tools/coverage.cjs && node tools/item-coverage.cjs",
     "build:data": "python tools/build-data.py"
   },
